@@ -1,0 +1,27 @@
+-create a store data base
+CREATE TABLE clothing (id integer primary key, name TEXT, quantity INTEGER, price INTEGER, asile INTEGER);
+
+
+INSERT INTO clothing values (1,"pants",4,11.20,2); 
+INSERT INTO clothing values (2,"shirt",5,3,4);
+INSERT INTO clothing values (3,"socks",10,2.50,11);
+INSERT INTO clothing values (4,"sandals",2,15,9);
+INSERT INTO clothing values (5,"undies", 13, 1,11);
+INSERT INTO clothing values (6,"hats", 3, 5, 6);
+INSERT INTO clothing values (7,"gloves",3, 20,9);
+INSERT INTO clothing values (8,"jacket",5,34,12);
+INSERT INTO clothing values (9,"shorts",1,15,2);
+INSERT INTO clothing values (10,"bra", 9,60,11);
+INSERT INTO clothing values (11,"boots",8,100,9);
+INSERT INTO clothing values (12,"tank top", 2,5,4);
+INSERT INTO clothing values (13,"necklace",3,10,1);
+INSERT INTO clothing values (14,"skirt", 7,16,3);
+INSERT INTO clothing values (15,"swim suit",0,20,16);
+
+
+-display database in order by price
+SELECT * FROM clothing ORDER BY price asc;
+
+
+-which item has the lowest inventory
+SELECT *, min (quantity) FROM Clothing;
